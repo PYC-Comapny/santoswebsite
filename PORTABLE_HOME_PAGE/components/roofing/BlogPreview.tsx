@@ -12,9 +12,8 @@ export default function BlogPreview() {
   
   // Define our 3 specific blogs
   const selectedSlugs = [
-    'common-roofing-mistakes-erie-pa',
-    'how-to-determine-roof-age-erie-pa',
-    'how-to-find-roof-leak-erie-pa'
+    '5-signs-roof-needs-attention',
+    'choosing-right-shingles'
   ];
   
   const displayedPosts = blogPosts.filter(post => selectedSlugs.includes(post.slug));

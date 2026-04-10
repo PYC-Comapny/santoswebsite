@@ -1,4 +1,4 @@
-export const submitToWebhook = async (data: any, type: 'PRODUCTION' | 'EARLY_CAPTURE' | 'GET_BOOKING') => {
+export const submitToWebhook = async (data: any, type: 'PRODUCTION' | 'EARLY_CAPTURE' | 'GET_BOOKING' | 'UPDATE_BOOKING') => {
     console.log(`Submitting to ${type} webhook:`, data);
     
     // Mock response for GET_BOOKING to prevent form crash

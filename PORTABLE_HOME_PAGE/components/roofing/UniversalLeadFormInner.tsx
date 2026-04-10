@@ -227,9 +227,9 @@ export default function UniversalLeadFormInner({
             // High-reliability slot extraction and transformation
             let rawSlots = [];
             if (Array.isArray(bookingResult)) {
-                rawSlots = bookingResult[0]?.availableSlots || bookingResult[0]?.data?.availableSlots || bookingResult;
+                rawSlots = (bookingResult[0] as any)?.availableSlots || (bookingResult[0] as any)?.data?.availableSlots || bookingResult;
             } else {
-                rawSlots = bookingResult?.availableSlots || bookingResult?.data?.availableSlots || bookingResult?.data || bookingResult;
+                rawSlots = (bookingResult as any)?.availableSlots || (bookingResult as any)?.data?.availableSlots || (bookingResult as any)?.data || bookingResult;
             }
             
             // Ensure we have an array

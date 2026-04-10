@@ -5,7 +5,9 @@ export const blogPosts = [
         excerpt: "Don't wait for a leak to reveal itself. Learn the warning signs that every homeowner should know.",
         image: "/blog/erie-aging-shingles.jpg",
         date: "2024-03-15",
-        slug: "5-signs-roof-needs-attention"
+        slug: "5-signs-roof-needs-attention",
+        category: "Maintenance",
+        readTime: "5 min read"
     },
     {
         id: 2,
@@ -13,6 +15,8 @@ export const blogPosts = [
         excerpt: "From asphalt to metal, we compare the best roofing materials for durability and style.",
         image: "/blog/shingle-vs-tile-erie.jpg",
         date: "2024-03-20",
-        slug: "choosing-right-shingles"
+        slug: "choosing-right-shingles",
+        category: "Roofing Materials",
+        readTime: "7 min read"
     }
 ];
